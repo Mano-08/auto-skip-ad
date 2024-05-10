@@ -1,0 +1,16 @@
+{
+  "name": "Automatic Ad Skipper",
+  "short_name": "auto ad skipper",
+  "description": "Automate skipping ads on youtube.",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "author": "Mano",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["./assets/main.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
